@@ -11,7 +11,7 @@ install:
 
 script:
 - node ./node_modules/mocha/bin/mocha
-- cd example && node ./build.js
+- cd example && node ./build.js && cd -
 
 deploy:
   provider: npm
