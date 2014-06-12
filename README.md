@@ -1,4 +1,4 @@
-# metalsmith-define [![Build Status](https://travis-ci.org/aymericbeaumet/metalsmith-define.svg?branch=master)](https://travis-ci.org/aymericbeaumet/metalsmith-define)
+# metalsmith-define [![Build Status](https://travis-ci.org/aymericbeaumet/metalsmith-define.svg?branch=master)](https://travis-ci.org/aymericbeaumet/metalsmith-define) [![NPM version](https://badge.fury.io/js/metalsmith-define.svg)](http://badge.fury.io/js/metalsmith-define)
 
 A Metalsmith plugin to define values in the metadata.
 
@@ -48,6 +48,11 @@ Metalsmith(__dirname)
 
 The option object passed to `metalsmith-define` contains couples of key/value.
 Each value will be exposed in the metadata at the corresponding key.
+
+## Changelog
+
+* 0.0.1
+  * Define key/values in the metadata
 
 ## License
 
