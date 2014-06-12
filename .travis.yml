@@ -19,5 +19,6 @@ deploy:
   api_key:
     secure: DF3qBU5Wn+hqrP5ssNSkoMPcYHxEPDrb03TC2GCI5TpYpHsVYcTFWA7sQ0ENsfQbTSz1LdCUV3UMycGIbqp8hOal9ysZ7gh0pO/K8NjGPS7R2mdPKfQTVonnOl/wHHSdbCLbyKFqmVDivjC5sCDy4Ucn1tuCNLkFOY02zkGVcAM=
   on:
+    repo: aymericbeaumet/metalsmith-define
     branch: master
     tags: true
