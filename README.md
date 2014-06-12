@@ -7,8 +7,8 @@ Why you would use it is up to you, but here some ideas:
   template
 - set variable related to the build script (e.g.: development/production
   environment)
-- expose JSON files (e.g. expose 'package.json' similarly to how it's done in a
-  classic Gruntfile)
+- expose JSON files (e.g.: expose the `package.json` file similarly to how
+  it's done in a classic Gruntfile)
 - expose your own JavaScript modules (e.g.: define custom helper functions)
 
 ## Installation
