@@ -1,8 +1,8 @@
-# metalsmith-define
+# metalsmith-define [![Build Status](https://travis-ci.org/aymericbeaumet/metalsmith-define.svg?branch=master)](https://travis-ci.org/aymericbeaumet/metalsmith-define)
 
 A Metalsmith plugin to define values in the metadata.
 
-Why you use it is up to you, but here some ideas:
+Why you would use it is up to you, but here some ideas:
 - expose a node module (e.g.: Underscore.js) in the metadata to use it in a
   template
 - set variable related to the build script (e.g.: development/production

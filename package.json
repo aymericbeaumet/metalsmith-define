@@ -6,9 +6,6 @@
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/aymericbeaumet/metalsmith-define.git"
@@ -22,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/aymericbeaumet/metalsmith-define/issues"
   },
-  "homepage": "https://github.com/aymericbeaumet/metalsmith-define"
+  "homepage": "https://github.com/aymericbeaumet/metalsmith-define",
+  "devDependencies": {
+    "metalsmith": "~0.8.0",
+    "mocha": "~1.20.1"
+  }
 }
