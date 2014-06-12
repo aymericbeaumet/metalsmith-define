@@ -1,0 +1,26 @@
+{
+  "name": "metalsmith-define",
+  "version": "0.0.1",
+  "description": "A Metalsmith plugin to define values in the metadata.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aymericbeaumet/metalsmith-define.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "plugin"
+  ],
+  "author": "Aymeric Beaumet <aymeric@beaumet.me> (http://beaumet.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aymericbeaumet/metalsmith-define/issues"
+  },
+  "homepage": "https://github.com/aymericbeaumet/metalsmith-define"
+}

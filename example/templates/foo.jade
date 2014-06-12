@@ -1,0 +1,10 @@
+html
+  body
+    p!= contents
+    hr
+    //- Use of the Underscore.js library
+    - var numbers = _.range(0, arrayLength).map(function(el) { return _.random(min, max); });
+    p Numbers: #{stringifyArray(numbers)}
+    p Min: #{_.min(numbers)}
+    p Max: #{_.max(numbers)}
+    p Sum: #{_.reduce(numbers, function(a, b) { return a + b; })}
