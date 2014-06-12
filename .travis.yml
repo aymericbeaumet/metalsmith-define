@@ -1,12 +1,14 @@
 language: node_js
 node_js:
   - "0.10"
-  - "0.8"
+
+before_install:
+  - npm install -g npm
 
 install:
   - npm install
-  - cd example && npm install
+  - cd ./example && npm install && cd -
 
 script:
-  - node_modules/.bin/mocha
+  - node ./node_modules/mocha/bin/mocha
   - cd example && node ./build.js
