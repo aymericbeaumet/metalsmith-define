@@ -1,4 +1,6 @@
-var assert = require('assert');
+var chai = require('chai');
+var expect = chai.expect;
+
 var Metalsmith = require('metalsmith');
 var define = require('../lib');
 
@@ -18,7 +20,7 @@ describe('metalsmith-define', function() {
 
     engine.use(function(files, metalsmith, done_) {
       var metadata = metalsmith.metadata();
-      expect.equal(metadata['key'], 'value');
+      expect(metadata['key']).to.equal('value');
       done_();
     });
 
@@ -37,7 +39,7 @@ describe('metalsmith-define', function() {
 
     engine.use(function(files, metalsmith, done_) {
       var metadata = metalsmith.metadata();
-      expect.equal(metadata['key'], 'value2');
+      expect(metadata['key']).to.equal('value2');
       done_();
     });
 
@@ -54,8 +56,8 @@ describe('metalsmith-define', function() {
 
     engine.use(function(files, metalsmith, done_) {
       var metadata = metalsmith.metadata();
-      expect.equal(metadata['key1'], value['value1']);
-      expect.equal(metadata['key2'], value['value2']);
+      expect(metadata['key1']).to.equal(value['value1']);
+      expect(metadata['key2']).to.equal(value['value2']);
       done_();
     });
 
