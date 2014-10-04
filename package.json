@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-define",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A Metalsmith plugin to define values in the metadata.",
   "main": "lib/index.js",
   "directories": {

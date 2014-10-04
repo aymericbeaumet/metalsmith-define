@@ -51,6 +51,9 @@ Each value will be exposed in the metadata at the corresponding key.
 
 ## Changelog
 
+* 1.0.0
+  * Bump stable
+
 * 0.0.2
   * Switch to Mocha/Chai to test
 
