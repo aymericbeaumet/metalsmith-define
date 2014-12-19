@@ -1,4 +1,4 @@
-# metalsmith-define [![Build Status](https://travis-ci.org/aymericbeaumet/metalsmith-define.svg?branch=master)](https://travis-ci.org/aymericbeaumet/metalsmith-define) [![NPM version](https://badge.fury.io/js/metalsmith-define.svg)](http://badge.fury.io/js/metalsmith-define)
+# metalsmith-define [![Build Status](https://img.shields.io/travis/aymericbeaumet/metalsmith-define.svg?style=flat)](https://travis-ci.org/aymericbeaumet/metalsmith-define) [![NPM version](https://img.shields.io/npm/v/metalsmith-define.svg?style=flat)](https://www.npmjs.com/package/metalsmith-define)
 
 A Metalsmith plugin to define values in the metadata.
 
