@@ -1,16 +1,18 @@
-var Metalsmith = require('metalsmith');
-var define = require('../lib'); // require('metalsmith-define');
-var markdown = require('metalsmith-markdown');
-var templates = require('metalsmith-templates');
+'use strict'
+
+var Metalsmith = require('metalsmith')
+var define = require('..') // require('metalsmith-define')
+var markdown = require('metalsmith-markdown')
+var templates = require('metalsmith-templates')
 
 Metalsmith(__dirname)
   .use(define({
     '_': require('underscore'),
-    stringifyArray: function(arr) { return arr.join(', '); },
+    stringifyArray: function (array) { return array.join(', ') },
     arrayLength: 10,
     min: 0,
     max: 100
   }))
   .use(markdown())
   .use(templates('jade'))
-  .build(function(err) { if (err) { throw err } });
+  .build(function (error) { if (error) { throw error } })

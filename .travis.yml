@@ -1,24 +1,31 @@
 language: node_js
 node_js:
-- '0.10'
-
-before_install:
-- npm install -g npm
+  - 4
+  - 5
 
 install:
-- npm install
-- cd ./example && npm install && cd -
+  - npm install
+  - pushd example && npm install && popd
 
 script:
-- node ./node_modules/mocha/bin/mocha
-- cd example && node ./build.js && cd -
+  - node --version && npm --version
+  - npm test
+  - pushd example && node build.js && popd
 
-deploy:
-  provider: npm
-  email: aymeric@beaumet.me
-  api_key:
-    secure: DF3qBU5Wn+hqrP5ssNSkoMPcYHxEPDrb03TC2GCI5TpYpHsVYcTFWA7sQ0ENsfQbTSz1LdCUV3UMycGIbqp8hOal9ysZ7gh0pO/K8NjGPS7R2mdPKfQTVonnOl/wHHSdbCLbyKFqmVDivjC5sCDy4Ucn1tuCNLkFOY02zkGVcAM=
-  on:
-    repo: aymericbeaumet/metalsmith-define
-    branch: master
-    tags: true
+after_success:
+  - npm run codeclimate
+
+###
+
+addons:
+  code_climate:
+    repo_token:
+      secure: dTztDhP50vNPNk1WDQGl41olUvTM+lJ9AW+cJx1tgI+wn1+vjfmJhT3zUvGu1cUNKpYpCk0ioaIWbvjsMQa3tdz2wtM5yFjV9v5A/HgwmCP/wnYtsQZcMFNYvcIgSjbFOUSGohmYPa3VastK0TtqOvYkxqtEYuzrUM4saMte7iI=
+
+git:
+  depth: 10
+
+matrix:
+  fast_finish: true
+
+sudo: false
