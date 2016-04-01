@@ -58,6 +58,9 @@ Each value will be exposed in the metadata at the corresponding key.
 
 ## Changelog
 
+* 2.0.1
+  * Switch test suite to nyc + ava
+
 * 2.0.0
   * Add AppVeyor
   * Add EditorConfig
