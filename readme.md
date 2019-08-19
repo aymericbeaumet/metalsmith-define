@@ -60,10 +60,10 @@ Default: `{}`
 This parameter will be iterated on all its key/value pairs either via:
 
 - `{type}.prototype.entries` if the type supports this method (e.g.,
-  [Map.prototype.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries)),
+  [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries)),
 - or
   [`Object.entries`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
-  by default (e.g., Array, Object, etc)
+  for all the other types: Array, Object, etc
 
 The pairs will be merged into the metadata object in the order in which they are
 being iterated on.
