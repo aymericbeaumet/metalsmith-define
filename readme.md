@@ -54,7 +54,7 @@ metalsmith(__dirname).use(
 
 #### options
 
-Type: `Enumerable` _(e.g., Array, Class, Map, Object, string, etc)_
+Type: `Enumerable` _(Array, Class, Map, Object, string, etc)_
 Default: `{}`
 
 This parameter will be iterated on all its key/value pairs either via:
@@ -63,7 +63,7 @@ This parameter will be iterated on all its key/value pairs either via:
   [Map.prototype.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries)),
 - or
   [`Object.entries`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
-  by default (e.g., Array)
+  by default (e.g., Array, Object, etc)
 
 The pairs will be merged into the metadata object in the order in which they are
 being iterated on.
