@@ -1,6 +1,6 @@
 # metalsmith-define [![Build Status](https://travis-ci.org/aymericbeaumet/metalsmith-define.svg?branch=master)](https://travis-ci.org/aymericbeaumet/metalsmith-define)
 
-> A Metalsmith plugin to define values in the metadata.
+> A Metalsmith plugin to define values in the metadata
 
 ## Install
 
