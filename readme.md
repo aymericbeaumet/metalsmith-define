@@ -59,7 +59,7 @@ Default: `{}`
 
 This parameter will be iterated on all its key/value pairs either via:
 
-- `{type}.prototype.entries` if the type supports this method (e.g.,
+- `{type}.prototype.entries` if the method exists (e.g.,
   [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries)),
 - or
   [`Object.entries`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
