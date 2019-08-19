@@ -136,6 +136,43 @@ test.cb('metalsmith-define should support maps', t => {
     })
 })
 
+test.cb('metalsmith-define should support strings', t => {
+  t.plan(4)
+  const string = 'foo'
+  metalsmith(fixtureDir)
+    .use(metalsmithDefine(string))
+    .use((_files, metalsmith, done) => {
+      const metadata = metalsmith.metadata()
+      t.is(metadata['0'], 'f')
+      t.is(metadata['1'], 'o')
+      t.is(metadata['2'], 'o')
+      return done()
+    })
+    .build(error => {
+      t.falsy(error)
+      t.end()
+    })
+})
+
+test.cb('metalsmith-define should support classes', t => {
+  t.plan(3)
+  const c = class {}
+  c.foo = 'bar'
+  c.bar = 'foo'
+  metalsmith(fixtureDir)
+    .use(metalsmithDefine(c))
+    .use((_files, metalsmith, done) => {
+      const metadata = metalsmith.metadata()
+      t.is(metadata.foo, 'bar')
+      t.is(metadata.bar, 'foo')
+      return done()
+    })
+    .build(error => {
+      t.falsy(error)
+      t.end()
+    })
+})
+
 test.cb(
   'metalsmith-define should detect and call the correct entries method (from the prototype)',
   t => {
