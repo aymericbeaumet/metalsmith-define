@@ -3,26 +3,44 @@
   "version": "2.0.1",
   "description": "A Metalsmith plugin to define values in the metadata",
   "keywords": [
+    "define",
     "metalsmith",
     "plugin"
   ],
-  "author": "Aymeric Beaumet <aymeric@beaumet.me>",
-  "license": "CC0-1.0",
-  "main": "lib",
-  "dependencies": {},
-  "devDependencies": {
-    "ava": "0.13.0",
-    "codeclimate-test-reporter": "0.3.1",
-    "metalsmith": "2.1.0",
-    "nyc": "6.1.1",
-    "standard": "6.0.8"
-  },
-  "scripts": {
-    "test": "standard && nyc --reporter=html --check-coverage --branches 100 --functions 100 --lines 100 --statements 100 ava",
-    "codeclimate": "nyc report --reporter=text-lcov | codeclimate-test-reporter"
-  },
+  "homepage": "https://github.com/aymericbeaumet/metalsmith-define",
   "repository": {
     "type": "git",
     "url": "https://github.com/aymericbeaumet/metalsmith-define.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Aymeric Beaumet",
+    "email": "hi@aymericbeaumet.com",
+    "url": "https://aymericbeaumet.com"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "format": "prettier --write \"{,.}**.{js,md,yml}\" && xo --fix",
+    "test": "prettier --check \"{,.}**.{js,md,yml}\" && xo && ava"
+  },
+  "xo": {
+    "prettier": true
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  },
+  "devDependencies": {
+    "ava": "2.3.0",
+    "metalsmith": "2.3.0",
+    "prettier": "1.18.2",
+    "xo": "0.24.0"
   }
 }
