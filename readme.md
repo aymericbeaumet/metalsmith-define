@@ -1,28 +1,31 @@
-# metalsmith-define [![Build Status](https://travis-ci.org/aymericbeaumet/metalsmith-define.svg?branch=master)](https://travis-ci.org/aymericbeaumet/metalsmith-define)
+# metalsmith-define
 
-> A Metalsmith plugin to define values in the metadata
+[![npm](https://img.shields.io/npm/v/metalsmith-define?style=flat-square)](https://www.npmjs.com/package/metalsmith-define)
+[![Build](https://img.shields.io/travis/aymericbeaumet/metalsmith-define?style=flat-square)](https://travis-ci.org/aymericbeaumet/metalsmith-define)
+[![Dependencies](https://img.shields.io/david/aymericbeaumet/metalsmith-define?style=flat-square)](https://david-dm.org/aymericbeaumet/metalsmith-define)
+[![Issues](https://img.shields.io/github/issues/aymericbeaumet/metalsmith-define?style=flat-square)](https://github.com/aymericbeaumet/metalsmith-define/issues)
+
+This plugin enables you to define custom values in the metadata. Why you
+would use it for is up to you, but here are some ideas:
+
+- expose a node module (e.g.: Lodash) in the metadata to use it in a
+  template
+- expose `process.env` to your templates (`NODE_ENV`, etc)
+- expose JSON files (e.g.: expose the `package.json` file similarly to how
+  it's done in a classic Gruntfile)
+- expose your own JavaScript modules (e.g., define custom helper functions)
 
 ## Install
 
 ```sh
-npm install --save metalsmith-define
+npm install metalsmith-define
 ```
 
 ## Usage
 
-Why you would use it is up to you, but here some ideas:
-
-- expose a node module (e.g.: Underscore.js) in the metadata to use it in a
-  template
-- set variable related to the build script (e.g.: development/production
-  environment)
-- expose JSON files (e.g.: expose the `package.json` file similarly to how
-  it's done in a classic Gruntfile)
-- expose your own JavaScript modules (e.g.: define custom helper functions)
-
 ### CLI
 
-**metalsmith.json**
+_metalsmith.json_
 
 ```json
 {
@@ -34,11 +37,11 @@ Why you would use it is up to you, but here some ideas:
 }
 ```
 
-### API
+### Node.js
 
 ```javascript
-var metalsmith = require('metalsmith')
-var metalsmithDefine = require('metalsmith-define')
+const metalsmith = require('metalsmith')
+const metalsmithDefine = require('metalsmith-define')
 
 metalsmith(__dirname).use(
   metalsmithDefine({
@@ -50,7 +53,9 @@ metalsmith(__dirname).use(
 )
 ```
 
-**metalsmithDefine(options)**
+## API
+
+### metalsmithDefine(options)
 
 #### options
 
