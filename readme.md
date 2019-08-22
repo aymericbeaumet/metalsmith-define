@@ -1,9 +1,8 @@
 # metalsmith-define
 
-[![npm](https://img.shields.io/npm/v/metalsmith-define?style=flat-square)](https://www.npmjs.com/package/metalsmith-define)
-[![Build](https://img.shields.io/travis/aymericbeaumet/metalsmith-define?style=flat-square)](https://travis-ci.org/aymericbeaumet/metalsmith-define)
-[![Dependencies](https://img.shields.io/david/aymericbeaumet/metalsmith-define?style=flat-square)](https://david-dm.org/aymericbeaumet/metalsmith-define)
-[![Issues](https://img.shields.io/github/issues/aymericbeaumet/metalsmith-define?style=flat-square)](https://github.com/aymericbeaumet/metalsmith-define/issues)
+[![travis](https://img.shields.io/travis/aymericbeaumet/metalsmith-define?style=flat-square&logo=travis)](https://travis-ci.org/aymericbeaumet/metalsmith-define)
+[![github](https://img.shields.io/github/issues/aymericbeaumet/metalsmith-define?style=flat-square&logo=github)](https://github.com/aymericbeaumet/metalsmith-define/issues)
+[![npm](https://img.shields.io/npm/v/metalsmith-define?style=flat-square&logo=npm)](https://www.npmjs.com/package/metalsmith-define)
 
 This plugin enables you to define custom values in the metadata. Why you
 would use it for is up to you, but here are some ideas:
