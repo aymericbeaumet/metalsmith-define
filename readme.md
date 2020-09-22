@@ -11,8 +11,12 @@ would use it for is up to you, but here are some ideas:
   template
 - expose `process.env` to your templates (`NODE_ENV`, etc)
 - expose JSON files (e.g.: expose the `package.json` file similarly to how
-  it's done in a classic Gruntfile)
-- expose your own JavaScript modules (e.g., define custom helper functions)
+  it could be done in a Gruntfile)
+- expose your own JavaScript modules (e.g.: define custom helper functions)
+
+Note that Metalsmith now has a [`metalsmith.metadata()`](https://metalsmith.io/#-metadata-json-) method, which overlaps some areas covered by this plugin. Though metalsmith-define still proves valuable in some situations:
+1. You want to define metadata but you only use the CLI version of Metalsmith (with no access to the API)
+2. You use the API, but the source of your metadata is not an Object. This plugin, on the other hand, supports any iterable: Array, Class, Map, etc.
 
 ## Install
 
